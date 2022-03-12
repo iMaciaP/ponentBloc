@@ -1,9 +1,12 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import { navBarLinks } from "../../data/data"
 
 const NavBar = () => {
+  //fixed="top" option makes navbar absolute
   return (
-    <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
+
+    <Navbar bg="primary" variant="dark" expand="lg" >
       <Container fluid>
         <Navbar.Brand href="#">PonentBloc</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -13,20 +16,20 @@ const NavBar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <NavDropdown title="ElCogul" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Sector</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Sector</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Albages" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Sector</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Sector</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Cubells" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Sector</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Sector</NavDropdown.Item>
-            </NavDropdown>
+
+            {navBarLinks.map((element, index) => {
+              return (
+                <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index}>
+                  {element.sectors.map((element2, index) => {
+                    return (
+                        <NavDropdown.Item href="#action3">{element2.name}</NavDropdown.Item>
+                    );
+                  })}
+                </NavDropdown>
+              );
+            })}
           </Nav>
-          <Button variant="secondary">Col·labora</Button>
+          <Button variant="outline-light">Col·labora</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
