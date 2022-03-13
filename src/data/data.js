@@ -3,7 +3,7 @@ import albagesimg from "../imgs/albages/albages.jpg";
 export const navBarLinks = [
   {
     title: "Albages",
-    sectors: [{ name: "El roc de la duna", link: "" }],
+    sectors: [{ name: "El roc de la duna", link: "/sector/1" }],
   },
   {
     title: "Castelldans",
@@ -52,68 +52,47 @@ export const navBarLinks = [
 ];
 export const cardsInfo = [
   {
-    header: "coordenades parquing",
-    title: "Albages",
-    imgSrc: albagesimg,
+    header: "Albages",
+    title: "Roc de la duna",
     desc: "some desc",
-    btnlink: "",
+    btnlink: "/sector/1",
     btnLabel: "Anar",
-    badges: [],
+    facils: 12,
+    med: 5,
+    dif: 7,
+    xtrem: 3
   },
   {
-    header: "coordenades parquing",
-    title: "Castelldans",
+    header: "Castelldans",
+    title: "Les penes",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
     btnlink: "",
     btnLabel: "Anar",
-    badges: [],
+    facils: 12,
+    med: 5,
+    dif: 7,
+    xtrem: 3
   },
   {
-    header: "coordenades parquing",
-    title: "El Cogul",
+    header: "Castelldans",
+    title: "La valleta",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
     btnlink: "",
     btnLabel: "Anar",
-    badges: [],
+    facils: 12,
+    med: 5,
+    dif: 7,
+    xtrem: 3
   },
   {
-    header: "coordenades parquing",
-    title: "Cubells",
-    desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "",
-    btnLabel: "Anar",
-    badges: [],
-  },
-  {
-    header: "coordenades parquing",
-    title: "Torrebesses",
-    desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "",
-    btnLabel: "Anar",
-    badges: [],
-  },
-  {
-    header: "coordenades parquing",
-    title: "Belianes",
-    desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "",
-    btnLabel: "Anar",
-    badges: [],
-  },
-  {
-    header: "coordenades parquing",
-    title: "Preixens",
-    desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "",
-    btnLabel: "Anar",
-    badges: [],
-  },
-  {
-    header: "",
+    header: "Exemple",
     title: "Vimpela",
-    desc: "",
+    desc: "exemple vimpela exemple vimpela",
     btnlink: "",
-    btnLabel: "",
-    badges: [],
+    btnLabel: "Anar",
+    facils: 12,
+    med: 5,
+    dif: 7,
+    xtrem: 3
   },
 ];

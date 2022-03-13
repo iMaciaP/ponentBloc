@@ -1,13 +1,5 @@
 
 .App {
   text-align: center;
-  background-color: #e9eef8;
 }
 
-.SectorCards {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  padding: 32px;
-  flex-direction: row;
-}

@@ -8,7 +8,7 @@ const NavBar = () => {
 
     <Navbar bg="primary" variant="dark" expand="lg" >
       <Container fluid>
-        <Navbar.Brand href="#">PonentBloc</Navbar.Brand>
+        <Navbar.Brand href="/">PonentBloc</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,16 +20,16 @@ const NavBar = () => {
             {navBarLinks.map((element, index) => {
               return (
                 <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index}>
-                  {element.sectors.map((element2, index) => {
+                  {element.sectors.map((element2, index2) => {
                     return (
-                        <NavDropdown.Item href="#action3">{element2.name}</NavDropdown.Item>
+                        <NavDropdown.Item key={index2} href={element2.link}>{element2.name}</NavDropdown.Item>
                     );
                   })}
                 </NavDropdown>
               );
             })}
           </Nav>
-          <Button variant="outline-light">Col·labora</Button>
+          <Button variant="outline-light" href="/about">Col·labora</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
