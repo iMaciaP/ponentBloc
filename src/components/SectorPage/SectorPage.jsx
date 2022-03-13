@@ -55,6 +55,7 @@ const Img = styled("img")({
 const SectorPage = (props) => {
   return (
     <>
+    {/* WIP REFACTOR THIS A UN COMPONENT QUE SIGUI BLOC I MAPEJAR */}
       <Typography gutterBottom variant="title1" component="div">
         ZONA - SECTOR
       </Typography>
