@@ -7,9 +7,6 @@ import { Router, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Router>
-      <Route path="/" component={App} />
-    </Router> */}
     <App />
   </React.StrictMode>,
   document.getElementById("root")

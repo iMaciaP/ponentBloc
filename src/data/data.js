@@ -1,4 +1,5 @@
 import albagesimg from "../imgs/albages/albages.jpg";
+import alb_b1 from "../imgs/albages/el-roc-de-la-duna/boulder-1.JPG";
 
 export const navBarLinks = [
   {
@@ -52,40 +53,40 @@ export const navBarLinks = [
 ];
 export const cardsInfo = [
   {
-    header: "Albages",
-    title: "Roc de la duna",
+    header: "Les Garrigues",
+    title: "Albages",
     desc: "some desc",
     btnlink: "/sector/1",
     btnLabel: "Anar",
     facils: 12,
     med: 5,
     dif: 7,
-    xtrem: 3
+    xtrem: 3,
   },
   {
-    header: "Castelldans",
-    title: "Les penes",
+    header: "Les Garrigues",
+    title: "Castelldans",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
     btnlink: "",
     btnLabel: "Anar",
     facils: 12,
     med: 5,
     dif: 7,
-    xtrem: 3
+    xtrem: 3,
   },
   {
-    header: "Castelldans",
-    title: "La valleta",
+    header: "La Noguera",
+    title: "Cubells",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
     btnlink: "",
     btnLabel: "Anar",
     facils: 12,
     med: 5,
     dif: 7,
-    xtrem: 3
+    xtrem: 3,
   },
   {
-    header: "Exemple",
+    header: "",
     title: "Vimpela",
     desc: "exemple vimpela exemple vimpela",
     btnlink: "",
@@ -93,6 +94,413 @@ export const cardsInfo = [
     facils: 12,
     med: 5,
     dif: 7,
-    xtrem: 3
+    xtrem: 3,
   },
 ];
+
+export const SectorsVies = {
+  Albages: {
+    ElRocDeLaDuna: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        img: alb_b1,
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        img: alb_b1,
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+  },
+  Castelldans: {
+    Valleta: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+    Penes: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+  },
+  Cogul: {
+    BeerAction: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+    ElTuronet: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+    ElsCamps: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+    LoPallars: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+    MestreMuten: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+    Universitat: {
+      Bloc1: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+      Bloc2: {
+        coords: "52,23134 43,234432",
+        nom: "nom del bloc",
+        vies: [
+          {
+            nom: "via 1",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            nom: "via 2",
+            grau: "7b",
+            icones: [],
+          },
+          {
+            nom: "via 3",
+            grau: "8c",
+            icones: [],
+          },
+        ],
+      },
+    },
+  },
+};

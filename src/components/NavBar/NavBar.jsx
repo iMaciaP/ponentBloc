@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
-import { navBarLinks } from "../../data/data"
+import { navBarLinks, SectorsVies } from "../../data/data"
 
 const NavBar = () => {
   //fixed="top" option makes navbar absolute
@@ -17,12 +17,23 @@ const NavBar = () => {
             navbarScroll
           >
 
-            {navBarLinks.map((element, index) => {
+            {/* {navBarLinks.map((element, index) => {
               return (
                 <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index}>
                   {element.sectors.map((element2, index2) => {
                     return (
                         <NavDropdown.Item key={index2} href={element2.link}>{element2.name}</NavDropdown.Item>
+                    );
+                  })}
+                </NavDropdown>
+              );
+            })} */}
+            {Object.keys(SectorsVies).map((element, index) => {
+              return (
+                <NavDropdown title={element} id="navbarScrollingDropdown" key={index}>
+                  {Object.keys(element).map((element2, index2) => {
+                    return (
+                        <NavDropdown.Item key={index2} href={"/"}>{element2}</NavDropdown.Item>
                     );
                   })}
                 </NavDropdown>
