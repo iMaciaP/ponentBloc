@@ -10,7 +10,7 @@ const Landpage = () => {
       <Banner />
       <div className="SectorCards">
         {cardsInfo.map((element, index) => {
-          return <SectorCard {...element} />;
+          return <SectorCard key={index} {...element} />;
         })}
       </div>
     </div>

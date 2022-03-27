@@ -6,6 +6,7 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
 import boulder1 from "../../imgs/albages/el-roc-de-la-duna/boulder-1.JPG";
+import esperoTest from "../../imgs/castelldans/la-valleta/espero-cabro2.jpg";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
@@ -31,9 +32,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     border: 0,
   },
 }));
-function createData(name, grau, icones) {
-  return { name, grau, icones };
-}
 const Img = styled("img")({
   margin: "auto",
   display: "block",
@@ -41,23 +39,12 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
-const rows = [
-  createData("Menys migidiades i mes dominades", "6a+"),
-  createData("El bong", "7a+"),
-  createData("La del retorn", "6b"),
-  createData("Hi havia una vegada", "5"),
-  createData("Tortellada", "8c+"),
-];
-
-const rowsB = Object.keys(SectorsVies).map((element) => {
-  createData(element.title, )
-});
 
 const Bloc = (props) => {
+
+  const { vies } = props;
   return (
     <>
-      {/* WIP REFACTOR THIS A UN COMPONENT QUE SIGUI BLOC I MAPEJAR */}
-
       <Paper
         sx={{
           p: 2,
@@ -75,24 +62,24 @@ const Bloc = (props) => {
               <Img className="blocimg" sx={{
                 maxWidth: '512px',
                 maxHeight: '512px'
-              }} alt="complex" src={boulder1} />
+              }} alt="complex" src={esperoTest} />
             {/* </ButtonBase> */}
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1" component="div">
-                  BOULDER 1 (NOM)
+                  {props.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  COORDS: 42,324432 53,234543
+                  COORDS: {props.coords}
                 </Typography>
 
                 <TableContainer component={Paper}>
                   {/* <Table sx={{ minWidth: 700 }} aria-label="customized table"> */}
                   <Table aria-label="customized table">
                     <TableBody>
-                      {rows.map((row, index) => (
+                      {vies.map((row, index) => (
                         <StyledTableRow key={row.name}>
                           <StyledTableCell component="th" scope="row">
                             {index + 1}

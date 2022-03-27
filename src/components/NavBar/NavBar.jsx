@@ -17,7 +17,7 @@ const NavBar = () => {
             navbarScroll
           >
 
-            {/* {navBarLinks.map((element, index) => {
+            {navBarLinks.map((element, index) => {
               return (
                 <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index}>
                   {element.sectors.map((element2, index2) => {
@@ -27,8 +27,8 @@ const NavBar = () => {
                   })}
                 </NavDropdown>
               );
-            })} */}
-            {Object.keys(SectorsVies).map((element, index) => {
+            })}
+            {/* {Object.keys(SectorsVies).map((element, index) => {
               return (
                 <NavDropdown title={element} id="navbarScrollingDropdown" key={index}>
                   {Object.keys(element).map((element2, index2) => {
@@ -38,7 +38,7 @@ const NavBar = () => {
                   })}
                 </NavDropdown>
               );
-            })}
+            })} */}
           </Nav>
           <Button variant="outline-light" href="/about">Col·labora</Button>
         </Navbar.Collapse>
