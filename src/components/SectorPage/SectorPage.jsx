@@ -15,8 +15,8 @@ const SectorPage = (props) => {
   // WIP segur hi ha una menera millor de fer aixo, custom hook? filter?
   const sName = path[1] ? path[1] : "err";
   const sId = path[2] ? path[2] : "1";
-  const sData = SectorsVies[sName][sId-1];
-  console.log(Object.values(sData));
+  const sData = SectorsVies[sName] ? SectorsVies[sName][sId - 1] : {};
+  console.log(sName, sId);
 
   // var res = obj.locations.filter((item) => {
   //   return item.id == val;
@@ -35,6 +35,15 @@ const SectorPage = (props) => {
       {Object.values(sData).map((element, index) => (
         <Bloc key={index} {...element} />
       ))}
+      {!!sData ? (
+        <></>
+      ) : (
+        <>
+          <Typography gutterBottom variant="title1" component="div">
+            404 NOT FOUND D:
+          </Typography>
+        </>
+      )}
     </div>
   );
 };
