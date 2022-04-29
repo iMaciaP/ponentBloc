@@ -1,5 +1,5 @@
 import React from "react";
-import "./Bloc.css"
+import "./Bloc.css";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -12,7 +12,21 @@ import TableBody from "@mui/material/TableBody";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
-import { SectorsVies } from "../../data/data"
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import { SectorsVies } from "../../data/data";
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -39,10 +53,13 @@ const Img = styled("img")({
   maxHeight: "100%",
 });
 
-
 const Bloc = (props) => {
-
   const { vies } = props;
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <Paper
@@ -57,13 +74,19 @@ const Bloc = (props) => {
         }}
       >
         <Grid container spacing={2}>
-          <Grid item>
-            {/* <ButtonBase sx={{ width: 420, height: 420 }}> */}
-              <Img className="blocimg" sx={{
-                maxWidth: '512px',
-                maxHeight: '512px'
-              }} alt="complex" src={esperoTest} />
-            {/* </ButtonBase> */}
+          <Grid item style={{ display: "flex" }}>
+            <ButtonBase sx={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: 250,
+                }}
+                onClick={handleOpen}>
+              <Img
+                className="blocimg"
+                alt="complex"
+                src={esperoTest}
+              />
+            </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
@@ -103,6 +126,19 @@ const Bloc = (props) => {
           </Grid>
         </Grid>
       </Paper>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Aqui va la imatge mes gran
+          </Typography>
+        </Box>
+      </Modal>
     </>
   );
 };

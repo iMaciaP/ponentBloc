@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.96557515.css",
+    "main.js": "./static/js/main.6393481f.js",
+    "static/media/camarasa.jpg": "./static/media/camarasa.a1ad47dd3148142925fa.jpg",
+    "static/media/albages.jpg": "./static/media/albages.b13c4a332f8e853a658d.jpg",
+    "static/media/boulder-1.JPG": "./static/media/boulder-1.8620647270afc8dc8dc0.JPG",
+    "static/media/espero-cabro2.jpg": "./static/media/espero-cabro2.bc21f6e0b384b7656219.jpg",
+    "index.html": "./index.html",
+    "main.96557515.css.map": "./static/css/main.96557515.css.map",
+    "main.6393481f.js.map": "./static/js/main.6393481f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96557515.css",
+    "static/js/main.6393481f.js"
+  ]
+}
