@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import "./SectorPage.css";
 import Typography from "@mui/material/Typography";
 import Bloc from "../Bloc/Bloc.jsx";
+import Map from "../Map/Mapa.jsx";
 import { SectorsVies } from "../../data/data";
 
 const usePathname = () => {
@@ -32,9 +33,11 @@ const SectorPage = (props) => {
       >
         ZONA - SECTOR
       </Typography>
-      <Button variant="outline-primary" href="">
+      {/* <Button variant="outline-primary" href="">
         Mapa
-      </Button>
+      </Button> */}
+
+      <Map />
 
       {/* WIP SELECT ID AND ADD ID TO DATA xD */}
       {Object.values(sData).map((element, index) => (

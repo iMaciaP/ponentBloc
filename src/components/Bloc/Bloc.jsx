@@ -12,20 +12,19 @@ import TableBody from "@mui/material/TableBody";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
 import { SectorsVies } from "../../data/data";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "70%",
+  height: "70%",
+  bgcolor: "background.paper",
+  border: "2px solid #000",
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -75,17 +74,15 @@ const Bloc = (props) => {
       >
         <Grid container spacing={2}>
           <Grid item style={{ display: "flex" }}>
-            <ButtonBase sx={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: 250,
-                }}
-                onClick={handleOpen}>
-              <Img
-                className="blocimg"
-                alt="complex"
-                src={esperoTest}
-              />
+            <ButtonBase
+              sx={{
+                objectFit: "cover",
+                width: "100%",
+                height: 250,
+              }}
+              onClick={handleOpen}
+            >
+              <Img className="blocimg" alt="complex" src={esperoTest} />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
@@ -134,9 +131,7 @@ const Bloc = (props) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Aqui va la imatge mes gran
-          </Typography>
+          <Img className="blocimg" alt="complex" src={esperoTest} />
         </Box>
       </Modal>
     </>
