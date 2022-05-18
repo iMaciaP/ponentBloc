@@ -5,7 +5,7 @@ import { useNavigate  } from "react-router-dom";
 const SectorCard = (props) => {
   const { facils, med, dif, xtrem } = props;
 
-  const router = useNavigate();
+  const navigate = useNavigate();
 
   const handleClick = (link) => {
     // router.navigate(link, { replace: true });
