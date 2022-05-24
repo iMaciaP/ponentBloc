@@ -50,9 +50,9 @@ export const navBarLinks = [
 export const cardsInfo = [
   {
     header: "Les Garrigues",
-    title: "Albages",
+    title: "El cogul",
     desc: "some desc",
-    btnlink: "/sector/1",
+    btnlink: "/cgl/1",
     btnLabel: "Anar",
     facils: 12,
     med: 5,
@@ -63,13 +63,13 @@ export const cardsInfo = [
     header: "Les Garrigues",
     title: "Castelldans",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "",
+    btnlink: "/cst/1",
     btnLabel: "Anar",
     facils: 12,
     med: 5,
     dif: 7,
     xtrem: 3,
-  },
+  }/*,
   {
     header: "La Noguera",
     title: "Cubells",
@@ -91,7 +91,7 @@ export const cardsInfo = [
     med: 5,
     dif: 7,
     xtrem: 3,
-  },
+  }, */
 ];
 
 export const SectorsVies = {
