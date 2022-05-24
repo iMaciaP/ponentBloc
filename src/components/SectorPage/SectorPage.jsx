@@ -17,39 +17,38 @@ const SectorPage = (props) => {
   // WIP segur hi ha una menera millor de fer aixo, custom hook? filter?
   const sName = path[1] ? path[1] : "err";
   const sId = path[2] ? path[2] : "1";
-  const sData = SectorsVies[sName] ? SectorsVies[sName][sId - 1] : {};
-  console.log(sName, sId);
+  const sData = SectorsVies[sName] ? SectorsVies[sName][sId - 1] : null;
+  
+  console.log(sData);
+  // TODO maapejar les coordenades de tots els blocs
+  const coords = {};
 
-  // var res = obj.locations.filter((item) => {
-  //   return item.id == val;
-  // });
   return (
     <div className="pageContainer">
-      <Typography
-        className="title"
-        gutterBottom
-        variant="title1"
-        component="div"
-      >
-        ZONA - SECTOR
-      </Typography>
-      {/* <Button variant="outline-primary" href="">
-        Mapa
-      </Button> */}
-
-      <Map />
-
-      {/* WIP SELECT ID AND ADD ID TO DATA xD */}
-      {Object.values(sData).map((element, index) => (
-        <Bloc key={index} {...element} />
-      ))}
-     
       {!!sData ? (
-        <></>
+        <>
+          <Typography
+            className="title"
+            gutterBottom
+            variant="title1"
+            component="div"
+          >
+            ZONA - SECTOR
+          </Typography>
+
+          <Map coords={coords} />
+
+          {Object.values(sData).map((element, index) => (
+            <Bloc key={index} {...element} />
+          ))}
+        </>
       ) : (
         <>
-          <Typography gutterBottom variant="title1" component="div">
-            404 NOT FOUND D:
+          <Typography gutterBottom variant="title1" component="h4">
+            No s'han afegit les dades encara, pots crear un json amb les vies i enviar-me'l.
+          </Typography>
+          <Typography gutterBottom variant="title1" component="h4">
+            | (• ◡•)| (❍ᴥ❍ʋ) 
           </Typography>
         </>
       )}

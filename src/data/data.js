@@ -1,5 +1,7 @@
 import albagesimg from "../imgs/albages/albages.jpg";
 import alb_b1 from "../imgs/albages/el-roc-de-la-duna/boulder-1.JPG";
+import cst_logo from "../imgs/castelldans/la-valleta/valleta_logo.png";
+import cst2_logo from "../imgs/castelldans/la-valleta/penes_logo.png";
 
 export const navBarLinks = [
   {
@@ -50,9 +52,10 @@ export const navBarLinks = [
 export const cardsInfo = [
   {
     header: "Les Garrigues",
-    title: "El cogul",
-    desc: "some desc",
-    btnlink: "/cgl/1",
+    title: "Cst - La valleta",
+    desc: "La valleta de castelldans, mítica zona",
+    btnlink: "/cst/1",
+    imgSrc: cst_logo,
     btnLabel: "Anar",
     facils: 12,
     med: 5,
@@ -61,9 +64,10 @@ export const cardsInfo = [
   },
   {
     header: "Les Garrigues",
-    title: "Castelldans",
-    desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "/cst/1",
+    title: "Cst - Les penes",
+    desc: "Les penes de castelldans, molt bona per principiants i a l'hivern",
+    btnlink: "/cst/2",
+    imgSrc: cst2_logo,
     btnLabel: "Anar",
     facils: 12,
     med: 5,
@@ -71,10 +75,10 @@ export const cardsInfo = [
     xtrem: 3,
   }/*,
   {
-    header: "La Noguera",
-    title: "Cubells",
+    header: "Les Garrigues",
+    title: "Titol",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
-    btnlink: "",
+    btnlink: "/about",
     btnLabel: "Anar",
     facils: 12,
     med: 5,
@@ -98,7 +102,7 @@ export const SectorsVies = {
   cst: [
     {
       Bloc1: {
-        coords: "XX,XXXXX XX,XXXXX",
+        coords: [41.499485,0.778083],
         name: "Bloc 14: esperó cabró",
         vies: [
           {
@@ -149,27 +153,6 @@ export const SectorsVies = {
           {
             name: "Dents de rata",
             grau: "Proj.",
-            icones: [],
-          },
-        ],
-      },
-      Bloc2: {
-        coords: "XX,XXXXX XX,XXXXX",
-        name: "castelldans 1-2",
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            icones: [],
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            icones: [],
-          },
-          {
-            name: "via 3",
-            grau: "8c",
             icones: [],
           },
         ],
