@@ -73,18 +73,29 @@ export const cardsInfo = [
     med: 5,
     dif: 7,
     xtrem: 3,
-  },
+  }/*,
   {
     header: "Les Garrigues",
     title: "Titol",
     desc: "alun tipus de descripcio del lloc dels blocs o algo",
     btnlink: "/about",
     btnLabel: "Anar",
-    facils: 6,
-    med: 9,
-    dif: 6,
-    xtrem: 9,
+    facils: 12,
+    med: 5,
+    dif: 7,
+    xtrem: 3,
   },
+  {
+    header: "",
+    title: "Vimpela",
+    desc: "exemple vimpela exemple vimpela",
+    btnlink: "",
+    btnLabel: "Anar",
+    facils: 12,
+    med: 5,
+    dif: 7,
+    xtrem: 3,
+  }, */
 ];
 
 export const SectorsVies = {
