@@ -14,6 +14,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import ChairIcon from '@mui/icons-material/Chair';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 import { SectorsVies } from "../../data/data";
 
 const style = {
@@ -111,7 +114,11 @@ const Bloc = (props) => {
                             {row.grau}
                           </StyledTableCell>
                           <StyledTableCell align="right">
-                            {/* {WIP ICONES} */}
+                            <Tooltip title="Sit">
+                              <IconButton>
+                                <ChairIcon />
+                              </IconButton>
+                            </Tooltip>
                           </StyledTableCell>
                         </StyledTableRow>
                       ))}

@@ -146,6 +146,28 @@ export const SectorsVies = {
           },
         ],
       },
+      Bloc2: {
+        coords: [41.499659, 0.777990],
+        name: "Bloc 13: Nose he de mirar",
+        vies: [
+          {
+            name: "Gatderencia",
+            grau: "3c",
+            icones: [],
+          },
+          {
+            name: "No recordo",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            name: "No recordo 2",
+            grau: "6a+",
+            icones: [],
+          },
+        ],
+      },
+      
     },
     {
       Bloc1: {
