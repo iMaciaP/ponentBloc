@@ -1,14 +1,14 @@
 import { Card, Button, Badge } from "react-bootstrap";
 import placeholder from "../../imgs/placeholder.png";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SectorCard = (props) => {
   const { facils, med, dif, xtrem } = props;
 
-  const navigate = useNavigate();
+  const navigate =  useNavigate();
 
   const handleClick = (link) => {
-    // router.navigate(link, { replace: true });
+    // navigate(link);
   }
 
   return (

@@ -1,5 +1,3 @@
-import albagesimg from "../imgs/albages/albages.jpg";
-import alb_b1 from "../imgs/albages/el-roc-de-la-duna/boulder-1.JPG";
 import cst_logo from "../imgs/castelldans/la-valleta/valleta_logo.png";
 import cst2_logo from "../imgs/castelldans/la-valleta/penes_logo.png";
 import cst1_1 from "../imgs/castelldans/la-valleta/boulder-4.JPG";

@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { Button } from "react-bootstrap";
 import "./SectorPage.css";
 import Typography from "@mui/material/Typography";
 import Bloc from "../Bloc/Bloc.jsx";

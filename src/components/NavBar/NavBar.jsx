@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
-import { navBarLinks, SectorsVies } from "../../data/data"
+import { navBarLinks } from "../../data/data"
 
 const NavBar = () => {
   //fixed="top" option makes navbar absolute
@@ -13,13 +13,12 @@ const NavBar = () => {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
+            style={{ maxHeight: "260px" }}
             navbarScroll
           >
-
             {navBarLinks.map((element, index) => {
               return (
-                <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index} disabled={index == 1 || index == 2 ? false : true}>
+                <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index} disabled={index === 1 || index === 2 ? false : true}>
                   {element.sectors.map((element2, index2) => {
                     return (
                         <NavDropdown.Item key={index2} href={element2.link}>{element2.name}</NavDropdown.Item>
@@ -28,17 +27,6 @@ const NavBar = () => {
                 </NavDropdown>
               );
             })}
-            {/* {Object.keys(SectorsVies).map((element, index) => {
-              return (
-                <NavDropdown title={element} id="navbarScrollingDropdown" key={index}>
-                  {Object.keys(element).map((element2, index2) => {
-                    return (
-                        <NavDropdown.Item key={index2} href={"/"}>{element2}</NavDropdown.Item>
-                    );
-                  })}
-                </NavDropdown>
-              );
-            })} */}
           </Nav>
           <Button variant="outline-light" href="/about">Col·labora</Button>
         </Navbar.Collapse>

@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 import About from "../About/About";
 import SectorPage from "../SectorPage/SectorPage";
 import Landpage from "../Landpage/Landpage";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   //wip mirar component stack de reactbootsrap

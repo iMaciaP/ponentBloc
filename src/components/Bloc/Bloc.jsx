@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
-import boulder1 from "../../imgs/albages/el-roc-de-la-duna/boulder-1.JPG";
 import esperoTest from "../../imgs/castelldans/la-valleta/espero-cabro2.jpg";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -14,10 +13,11 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-// import AirlineSeatReclineNormalIcon from '@mui/icons-material/AirlineSeatReclineNormal';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import { SectorsVies } from "../../data/data";
+import { BiChair } from 'react-icons/bi';
+import { FaHeart } from 'react-icons/fa';
+import { CgDanger } from 'react-icons/cg';
 
 const style = {
   position: "absolute",
@@ -117,7 +117,17 @@ const Bloc = (props) => {
                           <StyledTableCell align="right">
                             <Tooltip title="Sit">
                               <IconButton>
-                                {/* <AirlineSeatReclineNormalIcon /> */}
+                                <BiChair />
+                              </IconButton>
+                            </Tooltip>
+                            <Tooltip title="Sit">
+                              <IconButton>
+                                <CgDanger />
+                              </IconButton>
+                            </Tooltip>
+                            <Tooltip title="Sit">
+                              <IconButton>
+                                <FaHeart />
                               </IconButton>
                             </Tooltip>
                           </StyledTableCell>
