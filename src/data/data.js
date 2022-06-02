@@ -2,6 +2,10 @@ import albagesimg from "../imgs/albages/albages.jpg";
 import alb_b1 from "../imgs/albages/el-roc-de-la-duna/boulder-1.JPG";
 import cst_logo from "../imgs/castelldans/la-valleta/valleta_logo.png";
 import cst2_logo from "../imgs/castelldans/la-valleta/penes_logo.png";
+import cst1_1 from "../imgs/castelldans/la-valleta/boulder-4.JPG";
+import cst1_2 from "../imgs/castelldans/la-valleta/boulder-5.JPG";
+import cst1_3 from "../imgs/castelldans/la-valleta/boulder-6.JPG";
+import cst1_4 from "../imgs/castelldans/la-valleta/boulder-7.JPG";
 
 export const navBarLinks = [
   {
@@ -102,8 +106,9 @@ export const SectorsVies = {
   cst: [
     {
       Bloc1: {
-        coords: [41.499485,0.778083],
+        coords: [41.499661, 0.777974],
         name: "Bloc 14: esperó cabró",
+        img: cst1_1,
         vies: [
           {
             name: "La banyera",
@@ -158,8 +163,53 @@ export const SectorsVies = {
         ],
       },
       Bloc2: {
-        coords: [41.499659, 0.777990],
+        coords: [41.499485, 0.778071],
         name: "Bloc 13: Nose he de mirar",
+        img: cst1_2,
+        vies: [
+          {
+            name: "Gatderencia",
+            grau: "3c",
+            icones: [],
+          },
+          {
+            name: "No recordo",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            name: "No recordo 2",
+            grau: "6a+",
+            icones: [],
+          },
+        ],
+      },
+      Bloc3: {
+        coords: [41.499299, 0.778252],
+        name: "Bloc 13: Nose he de mirar",
+        img: cst1_3,
+        vies: [
+          {
+            name: "Gatderencia",
+            grau: "3c",
+            icones: [],
+          },
+          {
+            name: "No recordo",
+            grau: "6a",
+            icones: [],
+          },
+          {
+            name: "No recordo 2",
+            grau: "6a+",
+            icones: [],
+          },
+        ],
+      },
+      Bloc4: {
+        coords: [41.499381, 0.777785],
+        name: "Bloc 13: Nose he de mirar",
+        img: cst1_4,
         vies: [
           {
             name: "Gatderencia",

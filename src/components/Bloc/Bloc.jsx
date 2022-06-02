@@ -14,7 +14,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import ChairIcon from '@mui/icons-material/Chair';
+// import AirlineSeatReclineNormalIcon from '@mui/icons-material/AirlineSeatReclineNormal';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import { SectorsVies } from "../../data/data";
@@ -24,10 +24,11 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "70%",
-  height: "70%",
-  bgcolor: "background.paper",
+  width: "100%",
+  maxHeight: "80%",
+  bgcolor: "#9badc9",
   border: "2px solid #000",
+  overflow: "scroll",
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -52,7 +53,7 @@ const Img = styled("img")({
   margin: "auto",
   display: "block",
   maxWidth: "100%",
-  maxHeight: "100%",
+  // maxHeight: "100%",
 });
 
 const Bloc = (props) => {
@@ -67,9 +68,9 @@ const Bloc = (props) => {
       <Paper
         sx={{
           p: 2,
-          margin: "auto",
+          margin: "16px",
           marginTop: "32px",
-          maxWidth: "80%",
+          maxWidth: "100%",
           flexGrow: 1,
           backgroundColor: (theme) =>
             theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -116,7 +117,7 @@ const Bloc = (props) => {
                           <StyledTableCell align="right">
                             <Tooltip title="Sit">
                               <IconButton>
-                                <ChairIcon />
+                                {/* <AirlineSeatReclineNormalIcon /> */}
                               </IconButton>
                             </Tooltip>
                           </StyledTableCell>
@@ -136,6 +137,7 @@ const Bloc = (props) => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        onBackdropClick={handleClose}
       >
         <Box sx={style}>
           <Img className="blocimg" alt="complex" src={esperoTest} />
