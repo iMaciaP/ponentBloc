@@ -115,17 +115,17 @@ const Bloc = (props) => {
                             {row.grau}
                           </StyledTableCell>
                           <StyledTableCell align="right">
-                            <Tooltip title="Sit">
+                            <Tooltip title="Sit Start">
                               <IconButton>
                                 <BiChair />
                               </IconButton>
                             </Tooltip>
-                            <Tooltip title="Sit">
+                            <Tooltip title="Caiguda fotuda">
                               <IconButton>
                                 <CgDanger />
                               </IconButton>
                             </Tooltip>
-                            <Tooltip title="Sit">
+                            <Tooltip title="Blocarro">
                               <IconButton>
                                 <FaHeart />
                               </IconButton>

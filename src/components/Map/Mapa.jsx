@@ -23,7 +23,7 @@ const Mapa = (props) => {
     >
       <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png" maxZoom={20}/>
         {props.coords.map((pos, index) => (
-            <Marker position={pos} key={index}>
+            <Marker position={pos} key={index} icon={L.NumberedDivIcon({number: '1'})}>
               <Popup>
                 Bloc {index} [{pos[0]},{pos[1]}]
               </Popup>
