@@ -19,7 +19,7 @@ const SectorPage = (props) => {
   const sData = SectorsVies[sName] ? SectorsVies[sName][sId - 1] : null;
   
   // TODO maapejar les coordenades de tots els blocs
-  const coords = Object.values(sData).map(obj => {return !!obj.coords ? obj.coords : []});
+  const coords = !!sData ? Object.values(sData).map(obj => {return !!obj.coords ? obj.coords : []}) : null;
 
   return (
     <div className="pageContainer">
@@ -35,6 +35,7 @@ const SectorPage = (props) => {
           </Typography>
 
           <Map coords={coords} />
+          
 
           {Object.values(sData).map((element, index) => (
             <Bloc key={index} {...element} />

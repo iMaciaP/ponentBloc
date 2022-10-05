@@ -19,7 +19,7 @@ const SectorCard = (props) => {
         {props.title ? <Card.Title>{props.title}</Card.Title> : null}
         {props.desc ? <Card.Text>{props.desc}</Card.Text> : null}
         {props.btnlink ? (
-          <Button variant="primary" onClick={handleClick(props.btnlink)}>{props.btnLabel}</Button>
+          <Button disabled variant="primary" onClick={handleClick(props.btnlink)}>{props.btnLabel}</Button>
         ) : null}
       </Card.Body>
       <Card.Footer className="text-muted">

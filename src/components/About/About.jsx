@@ -5,7 +5,13 @@ const About = () => {
   return (
     <div style={{padding: 32}}>
       <Typography gutterBottom variant="title" component="h3">
-        Aquesta pagina està en construcció, tot es gratis així que va al seu ritme.
+      Aquesta pàgina és en construcció, tot és gratis així que va al seu ritme.
+      </Typography>
+      <Typography gutterBottom variant="subtitle" component="h4">
+        Sempre pots col·laborar amb el que creguis enviant un correu a ivan.macia96@gmail.com
+      </Typography>
+      <Typography gutterBottom variant="title" component="h3">
+      {"| (• ◡•)| (❍ᴥ❍ʋ)"}
       </Typography>
     </div>
   );
