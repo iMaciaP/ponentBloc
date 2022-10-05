@@ -54,7 +54,7 @@ export const navBarLinks = [
 export const cardsInfo = [
   {
     header: "Les Garrigues",
-    title: "Cst - La valleta",
+    title: "Castelldans - La valleta",
     desc: "La valleta de castelldans, mítica zona",
     btnlink: "/cst/1",
     imgSrc: cst_logo,
@@ -66,7 +66,7 @@ export const cardsInfo = [
   },
   {
     header: "Les Garrigues",
-    title: "Cst - Les penes",
+    title: "Castelldans - Les penes",
     desc: "Les penes de castelldans, molt bona per principiants i a l'hivern",
     btnlink: "/cst/2",
     imgSrc: cst2_logo,
@@ -75,6 +75,30 @@ export const cardsInfo = [
     med: 5,
     dif: 7,
     xtrem: 3,
+  },
+  {
+    header: "La Noguera",
+    title: "Cubells - Principal",
+    desc: "Algun text descriptiu",
+    btnlink: "/cub/1",
+    // imgSrc: cst2_logo,
+    btnLabel: "Anar",
+    facils: 5,
+    med: 5,
+    dif: 5,
+    xtrem: 5,
+  },
+  {
+    header: "Urgell",
+    title: "Belianes - Les roques del barret",
+    desc: "Algun text descriptiu",
+    btnlink: "/cst/2",
+    // imgSrc: cst2_logo,
+    btnLabel: "Anar",
+    facils: 5,
+    med: 5,
+    dif: 5,
+    xtrem: 5,
   }/*,
   {
     header: "Les Garrigues",
@@ -230,7 +254,7 @@ export const SectorsVies = {
     },
     {
       Bloc1: {
-        coords: "XX,XXXXX XX,XXXXX",
+        coords: [41.499381, 0.777785],
         name: "castelldans 2-1",
         vies: [
           {
@@ -251,7 +275,7 @@ export const SectorsVies = {
         ],
       },
       Bloc2: {
-        coords: "XX,XXXXX XX,XXXXX",
+        coords: [41.499381, 0.777785],
         name: "castelldans 2-2",
         vies: [
           {
