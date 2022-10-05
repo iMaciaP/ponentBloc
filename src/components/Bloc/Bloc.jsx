@@ -57,7 +57,7 @@ const Img = styled("img")({
 });
 
 const Bloc = (props) => {
-  const { vies } = props;
+  const { vies, img } = props;
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -86,7 +86,7 @@ const Bloc = (props) => {
               }}
               onClick={handleOpen}
             >
-              <Img className="blocimg" alt="complex" src={esperoTest} />
+              <Img className="blocimg" alt="complex" src={!!props.img ? props.img : esperoTest} />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
