@@ -57,7 +57,7 @@ const Img = styled("img")({
 });
 
 const Bloc = (props) => {
-  const { vies, img } = props;
+  const { vies } = props;
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
