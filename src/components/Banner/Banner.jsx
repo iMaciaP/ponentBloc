@@ -20,7 +20,7 @@ const Banner = () => {
           component="h1"
           variant="h2"
           align="center"
-          color="text.primary"
+          color="white"
           gutterBottom
         >
           Bloc de ponent
@@ -28,7 +28,7 @@ const Banner = () => {
         <Typography
           variant="h5"
           align="center"
-          color="text.secondary"
+          color="white"
           paragraph
         >
           L'idea es tenir un repositori on poder consultar les vies i blocs que
