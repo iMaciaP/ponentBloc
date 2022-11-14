@@ -13,22 +13,26 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
-import { BiChair } from 'react-icons/bi';
-import { FaHeart } from 'react-icons/fa';
-import { CgDanger } from 'react-icons/cg';
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import { BiChair } from "react-icons/bi";
+import { FaHeart } from "react-icons/fa";
+import { CgDanger } from "react-icons/cg";
 
 const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "100%",
-  maxHeight: "80%",
+  maxWidth: "85%",
+  maxHeight: "85%",
+  bottom: 0,
+  left: 0,
+  margin: "auto",
+  overflow: "auto",
+  position: "fixed",
+  right: 0,
+  top: 0,
+  oObjectFit: "contain",
+  objectFit: "contain",
   bgcolor: "#9badc9",
   border: "2px solid #000",
-  overflow: "scroll",
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -76,7 +80,7 @@ const Bloc = (props) => {
             theme.palette.mode === "dark" ? "#1A2027" : "#fff",
         }}
       >
-        <Grid container spacing={2}>
+        <Grid container spacing={2} style={{ justifyContent: "center" }}>
           <Grid item style={{ display: "flex" }}>
             <ButtonBase
               sx={{
@@ -86,7 +90,11 @@ const Bloc = (props) => {
               }}
               onClick={handleOpen}
             >
-              <Img className="blocimg" alt="complex" src={!!props.img ? props.img : esperoTest} />
+              <Img
+                className="blocimg"
+                alt="complex"
+                src={!!props.img ? props.img : esperoTest}
+              />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
@@ -115,21 +123,27 @@ const Bloc = (props) => {
                             {row.grau}
                           </StyledTableCell>
                           <StyledTableCell align="right">
-                            <Tooltip title="Sit Start">
-                              <IconButton>
-                                <BiChair />
-                              </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Caiguda fotuda">
-                              <IconButton>
-                                <CgDanger />
-                              </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Blocarro">
-                              <IconButton>
-                                <FaHeart />
-                              </IconButton>
-                            </Tooltip>
+                            {row.sit ? (
+                              <Tooltip title="Sit Start">
+                                <IconButton>
+                                  <BiChair />
+                                </IconButton>
+                              </Tooltip>
+                            ) : null}
+                            {row.cau ? (
+                              <Tooltip title="Caiguda fotuda">
+                                <IconButton>
+                                  <CgDanger />
+                                </IconButton>
+                              </Tooltip>
+                            ) : null}
+                            {row.love ? (
+                              <Tooltip title="Blocarro">
+                                <IconButton>
+                                  <FaHeart />
+                                </IconButton>
+                              </Tooltip>
+                            ) : null}
                           </StyledTableCell>
                         </StyledTableRow>
                       ))}
@@ -150,7 +164,11 @@ const Bloc = (props) => {
         onBackdropClick={handleClose}
       >
         <Box sx={style}>
-          <Img className="blocimg" alt="complex" src={esperoTest} />
+          <Img
+            className="blocimg"
+            alt="complex"
+            src={!!props.img ? props.img : esperoTest}
+          />
         </Box>
       </Modal>
     </>

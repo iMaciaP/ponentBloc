@@ -18,7 +18,7 @@ const NavBar = () => {
           >
             {navBarLinks.map((element, index) => {
               return (
-                <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index} disabled={index === 1 || index === 3 ? false : true}>
+                <NavDropdown title={element.title} id="navbarScrollingDropdown" key={index} disabled={index === 1 || index === 3 || index === 5 ? false : true}>
                   {element.sectors.map((element2, index2) => {
                     return (
                         <NavDropdown.Item key={index2} href={element2.link}>{element2.name}</NavDropdown.Item>
