@@ -59,8 +59,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const Img = styled("img")({
   margin: "auto",
   display: "block",
-  // maxWidth: "100%",
-  // maxHeight: "100%",
 });
 
 const Bloc = (props) => {
@@ -183,6 +181,9 @@ const Bloc = (props) => {
             className="blocimg"
             alt="complex"
             src={!!props.img ? props.img : esperoTest}
+            sx={{
+              height: "auto"
+            }}
           />
         </Box>
       </Modal>
