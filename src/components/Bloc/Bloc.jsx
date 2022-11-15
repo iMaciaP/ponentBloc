@@ -18,19 +18,21 @@ import Tooltip from "@mui/material/Tooltip";
 import { BiChair } from "react-icons/bi";
 import { FaHeart } from "react-icons/fa";
 import { CgDanger } from "react-icons/cg";
-import { FaCopy } from "react-icons/fa";
-
 
 const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "90%",
-  maxHeight: "90%",
+  maxWidth: "85%",
+  maxHeight: "85%",
+  bottom: 0,
+  left: 0,
+  margin: "auto",
+  overflow: "auto",
+  position: "fixed",
+  right: 0,
+  top: 0,
+  oObjectFit: "contain",
+  objectFit: "contain",
   bgcolor: "#9badc9",
   border: "2px solid #000",
-  overflow: "hidden",
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -81,7 +83,7 @@ const Bloc = (props) => {
             theme.palette.mode === "dark" ? "#1A2027" : "#fff",
         }}
       >
-        <Grid container spacing={2}>
+        <Grid container spacing={2} style={{ justifyContent: "center" }}>
           <Grid item style={{ display: "flex" }}>
             <ButtonBase
               sx={{
@@ -132,21 +134,27 @@ const Bloc = (props) => {
                             {row.grau}
                           </StyledTableCell>
                           <StyledTableCell align="right">
-                            <Tooltip title="Sit Start">
-                              <IconButton>
-                                <BiChair />
-                              </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Caiguda fotuda">
-                              <IconButton>
-                                <CgDanger />
-                              </IconButton>
-                            </Tooltip>
-                            <Tooltip title="Blocarro">
-                              <IconButton>
-                                <FaHeart />
-                              </IconButton>
-                            </Tooltip>
+                            {row.sit ? (
+                              <Tooltip title="Sit Start">
+                                <IconButton>
+                                  <BiChair />
+                                </IconButton>
+                              </Tooltip>
+                            ) : null}
+                            {row.cau ? (
+                              <Tooltip title="Caiguda fotuda">
+                                <IconButton>
+                                  <CgDanger />
+                                </IconButton>
+                              </Tooltip>
+                            ) : null}
+                            {row.love ? (
+                              <Tooltip title="Blocarro">
+                                <IconButton>
+                                  <FaHeart />
+                                </IconButton>
+                              </Tooltip>
+                            ) : null}
                           </StyledTableCell>
                         </StyledTableRow>
                       ))}

@@ -1,15 +1,11 @@
 import { Card, Button, Badge } from "react-bootstrap";
 import placeholder from "../../imgs/placeholder.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SectorCard = (props) => {
   const { facils, med, dif, xtrem } = props;
 
-  // const navigate =  useNavigate();
-
-  const handleClick = (link) => {
-    // navigate(link);
-  }
+  const navigate = useNavigate();
 
   return (
     <Card style={{ width: "18rem", margin: "1rem" }}>
@@ -19,7 +15,9 @@ const SectorCard = (props) => {
         {props.title ? <Card.Title>{props.title}</Card.Title> : null}
         {props.desc ? <Card.Text>{props.desc}</Card.Text> : null}
         {props.btnlink ? (
-          <Button disabled variant="primary" onClick={handleClick(props.btnlink)}>{props.btnLabel}</Button>
+          <Button variant="primary" onClick={() => navigate(props.btnlink)}>
+            {props.btnLabel}
+          </Button>
         ) : null}
       </Card.Body>
       <Card.Footer className="text-muted">
