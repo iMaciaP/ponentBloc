@@ -1,17 +1,10 @@
 import cst_logo from "../imgs/castelldans/la-valleta/valleta_logo.png";
 import cst2_logo from "../imgs/castelldans/la-valleta/penes_logo.png";
-import cst1_1 from "../imgs/castelldans/la-valleta/boulder-4.JPG";
-import cst1_2 from "../imgs/castelldans/la-valleta/boulder-5.JPG";
-import cst1_3 from "../imgs/castelldans/la-valleta/boulder-6.JPG";
-import cst1_4 from "../imgs/castelldans/la-valleta/boulder-7.JPG";
-import cst2_1 from "../imgs/castelldans/les-penes/boulder-1.JPG";
-import cst2_2 from "../imgs/castelldans/les-penes/boulder-2.JPG";
-import cst2_3 from "../imgs/castelldans/les-penes/boulder-3.JPG";
-import cst2_4 from "../imgs/castelldans/les-penes/boulder-4.JPG";
-import cst2_5 from "../imgs/castelldans/les-penes/boulder-5.JPG";
-import cst2_6 from "../imgs/castelldans/les-penes/boulder-6.JPG";
-import cst2_7 from "../imgs/castelldans/les-penes/boulder-7.JPG";
+import cst1_1 from "../imgs/castelldans/la-valleta/boulder-1.JPG";
+import cst1_2 from "../imgs/castelldans/la-valleta/boulder-2.JPG";
+import cst1_3 from "../imgs/castelldans/la-valleta/boulder-14.JPG";
 import cub_logo from "../imgs/cubells/cubells.jpg";
+import missing from "../imgs/placeholder.png";
 export const navBarLinks = [
   {
     title: "Albages",
@@ -66,10 +59,10 @@ export const cardsInfo = [
     btnlink: "/cst/1",
     imgSrc: cst_logo,
     btnLabel: "Anar",
-    facils: 12,
-    med: 5,
-    dif: 7,
-    xtrem: 3,
+    facils: 1,
+    med: 1,
+    dif: 1,
+    xtrem: 1,
   },
   {
     header: "Les Garrigues",
@@ -78,10 +71,10 @@ export const cardsInfo = [
     btnlink: "/cst/2",
     imgSrc: cst2_logo,
     btnLabel: "Anar",
-    facils: 12,
-    med: 5,
-    dif: 7,
-    xtrem: 3,
+    facils: 1,
+    med: 1,
+    dif: 1,
+    xtrem: 1,
   },
   {
     header: "La Noguera",
@@ -90,17 +83,17 @@ export const cardsInfo = [
     btnlink: "/cub/1",
     imgSrc: cub_logo,
     btnLabel: "Anar",
-    facils: 5,
-    med: 5,
-    dif: 5,
-    xtrem: 5,
+    facils: 1,
+    med: 1,
+    dif: 1,
+    xtrem: 1,
   },
   {
     header: "Urgell",
     title: "Belianes - Les roques del barret",
     desc: "Algun text descriptiu",
     btnlink: "/cst/2",
-    // imgSrc: cst2_logo,
+    imgSrc: cst1_2,
     btnLabel: "Anar",
     facils: 5,
     med: 5,
@@ -135,344 +128,126 @@ export const SectorsVies = {
   cst: [
     {
       Bloc1: {
-        coords: [41.499661, 0.777974],
-        name: "Bloc 14: esperó cabró",
+        coords: [41.498053, 0.778366],
+        name: "Bloc 1: Trape i equili",
         img: cst1_1,
         vies: [
           {
-            name: "La banyera",
-            grau: "5c",
-            cau: true,
-            love: true,
+            name: "El trapezista",
+            grau: "Proj",
           },
           {
-            name: "Banyera ext.",
-            grau: "6a+",
-            sit: true,
-            love: true,
-          },
-          {
-            name: "Regalo alemán",
-            grau: "7a+",
-            love: true,
-          },
-          {
-            name: "El cabro del cantó",
-            grau: "6b",
-          },
-          {
-            name: "Esperó cabró",
-            grau: "6b+",
-            sit: true,
-          },
-          {
-            name: "Fissuring direct",
-            grau: "7a+",
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Fissuring dreta",
-            grau: "6b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Inverti",
-            grau: "6c",
-            love: true,
-          },
-          {
-            name: "Hybrid",
-            grau: "6c/7a",
-            sit: true,
-          },
-          {
-            name: "Dents de rata",
-            grau: "Proj.",
-            love: true,
-          },
+            name: "L'equilibrista",
+            grau: "6a",
+          }
         ],
       },
       Bloc2: {
-        coords: [41.499485, 0.778071],
-        name: "Bloc 13: Nose he de mirar",
+        coords: [41.497938, 0.778402],
+        name: "Bloc 2: Allround",
         img: cst1_2,
         vies: [
           {
-            name: "Gatderencia",
-            grau: "3c",
-            cau: true,
-            love: true,
+            name: "F",
+            grau: "3",
           },
           {
-            name: "No recordo",
+            name: "A",
+            grau: "3",
+          },
+          {
+            name: "C",
+            grau: "3",
+          },
+          {
+            name: "I",
+            grau: "3",
+          },
+          {
+            name: "L",
+            grau: "3",
+          },
+          {
+            name: "Facil amb noseque",
+            grau: "5b",
+          },
+          {
+            name: "Project",
+          },
+          {
+            name: "Project",
+          },
+          {
+            name: "Project",
+          },
+          {
+            name: "El kinki del talo",
             grau: "6a",
-            sit: true,
+            love: true
           },
           {
-            name: "No recordo 2",
-            grau: "6a+",
-            love: true,
+            name: "El yonki del vaca",
+            grau: "6a",
+            love: true
           },
         ],
       },
       Bloc3: {
-        coords: [41.499299, 0.778252],
-        name: "Bloc 13: Nose he de mirar",
+        coords: [41.497911, 0.778590],
+        name: "Bloc 3: La pastora",
         img: cst1_3,
         vies: [
           {
-            name: "Gatderencia",
-            grau: "3c",
-            sit: true,
-            cau: true,
+            name: "Lance al fly",
+            grau: "6b+",
             love: true,
+            cau: true,
           },
           {
-            name: "No recordo",
+            name: "La Masse",
+            grau: "7a",
+            cau: true,
+          },
+          {
+            name: "Le trou Jammoui",
+            grau: "7b",
+          },
+          {
+            name: "Dedos hondos",
+            grau: "6b",
+          },
+          {
+            name: "Pastora de gossos",
+            grau: "6b",
+            sit: true,
+            love: true
+          },
+          {
+            name: "Regletejant",
             grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
           },
           {
-            name: "No recordo 2",
-            grau: "6a+",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc4: {
-        coords: [41.499381, 0.777785],
-        name: "Bloc 13: Nose he de mirar",
-        img: cst1_4,
-        vies: [
-          {
-            name: "Gatderencia",
-            grau: "3c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "No recordo",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "No recordo 2",
-            grau: "6a+",
-            sit: true,
-            cau: true,
-            love: true,
+            name: "Per començar",
+            grau: "3",
           },
         ],
       },
     },
     {
       Bloc1: {
-        coords: [41.499381, 0.777785],
-        name: "castelldans - Les penes",
-        img: cst2_1,
+        coords: [41.494119, 0.785872],
+        name: "Bloc 1: Dades dades",
+        img: missing,
         vies: [
           {
-            name: "via 1",
-            grau: "6a",
+            name: "Dades dades",
+            grau: "75a",
             sit: true,
             cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
+            love: true
+          }
         ],
       },
-      Bloc2: {
-        coords: [41.499381, 0.776785],
-        name: "castelldans 2-2",
-        img: cst2_2,
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc3: {
-        coords: [41.496381, 0.777885],
-        name: "castelldans 2-3",
-        img: cst2_3,
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc4: {
-        coords: [41.496481, 0.777885],
-        name: "castelldans 2-4",
-        img: cst2_4,
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc5: {
-        coords: [41.496581, 0.777885],
-        name: "castelldans 2-5",
-        img: cst2_5,
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc6: {
-        coords: [41.496681, 0.777886],
-        name: "castelldans 2-6",
-        img: cst2_6,
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc7: {
-        coords: [41.496781, 0.777887],
-        name: "castelldans 2-7",
-        img: cst2_7,
-        vies: [
-          {
-            name: "via 1",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 2",
-            grau: "7b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "via 3",
-            grau: "8c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-
     },
   ],
   cub: [
@@ -485,125 +260,6 @@ export const SectorsVies = {
           {
             name: "La banyera",
             grau: "5c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Banyera ext.",
-            grau: "6a+",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Regalo alemán",
-            grau: "7a+",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "El cabro del cantó",
-            grau: "6b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Esperó cabró",
-            grau: "6b+",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Fissuring direct",
-            grau: "7a+",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Fissuring dreta",
-            grau: "6b",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Inverti",
-            grau: "6c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Hybrid",
-            grau: "6c/7a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Dents de rata",
-            grau: "Proj.",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc2: {
-        coords: [41.499485, 0.778071],
-        name: "Bloc 2: bloc 2 de cubells",
-        img: cst1_2,
-        vies: [
-          {
-            name: "Gatderencia",
-            grau: "3c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "No recordo",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "No recordo 2",
-            grau: "6a+",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-        ],
-      },
-      Bloc3: {
-        coords: [41.499299, 0.778252],
-        name: "Bloc 3: bloc 3 de cubells",
-        img: cst1_3,
-        vies: [
-          {
-            name: "Gatderencia",
-            grau: "3c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "No recordo",
-            grau: "6a",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "No recordo 2",
-            grau: "6a+",
             sit: true,
             cau: true,
             love: true,
@@ -622,13 +278,6 @@ export const SectorsVies = {
           {
             name: "La banyera",
             grau: "5c",
-            sit: true,
-            cau: true,
-            love: true,
-          },
-          {
-            name: "Banyera ext.",
-            grau: "6a+",
             sit: true,
             cau: true,
             love: true,

@@ -18,8 +18,10 @@ const SectorPage = (props) => {
   const sId = path[2] ? path[2] : "1";
   const sData = SectorsVies[sName] ? SectorsVies[sName][sId - 1] : null;
   
-  // TODO maapejar les coordenades de tots els blocs
   const coords = !!sData ? Object.values(sData).map(obj => {return !!obj.coords ? obj.coords : []}) : null;
+
+  //TODO mapejar el titol al nom del sector
+  // const pathname = window.location.pathname;
 
   return (
     <div className="pageContainer">
