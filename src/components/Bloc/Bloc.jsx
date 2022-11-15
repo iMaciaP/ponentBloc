@@ -13,22 +13,24 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
-import { BiChair } from 'react-icons/bi';
-import { FaHeart } from 'react-icons/fa';
-import { CgDanger } from 'react-icons/cg';
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import { BiChair } from "react-icons/bi";
+import { FaHeart } from "react-icons/fa";
+import { CgDanger } from "react-icons/cg";
+import { FaCopy } from "react-icons/fa";
+
 
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "100%",
-  maxHeight: "80%",
+  width: "90%",
+  maxHeight: "90%",
   bgcolor: "#9badc9",
   border: "2px solid #000",
-  overflow: "scroll",
+  overflow: "hidden",
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -52,16 +54,19 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const Img = styled("img")({
   margin: "auto",
   display: "block",
-  maxWidth: "100%",
+  // maxWidth: "100%",
   // maxHeight: "100%",
 });
 
 const Bloc = (props) => {
   const { vies } = props;
 
+  const parsedCoords = props.coords[0]+","+props.coords[1];
+  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleCopy = (cords) => navigator.clipboard.writeText(cords);
 
   return (
     <>
@@ -86,7 +91,11 @@ const Bloc = (props) => {
               }}
               onClick={handleOpen}
             >
-              <Img className="blocimg" alt="complex" src={!!props.img ? props.img : esperoTest} />
+              <Img
+                className="blocimg"
+                alt="complex"
+                src={!!props.img ? props.img : esperoTest}
+              />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
@@ -96,7 +105,15 @@ const Bloc = (props) => {
                   {props.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  COORDS: {props.coords}
+                  COORDS: {parsedCoords}
+                  <ButtonBase
+                    variant="contained"
+                    sx={{
+                      width: "64px",
+                      margin: "16px",
+                    }}
+                    onClick={handleCopy(parsedCoords)}
+                  ><FaCopy /></ButtonBase>
                 </Typography>
 
                 <TableContainer component={Paper}>
@@ -150,7 +167,11 @@ const Bloc = (props) => {
         onBackdropClick={handleClose}
       >
         <Box sx={style}>
-          <Img className="blocimg" alt="complex" src={esperoTest} />
+          <Img
+            className="blocimg"
+            alt="complex"
+            src={!!props.img ? props.img : esperoTest}
+          />
         </Box>
       </Modal>
     </>
