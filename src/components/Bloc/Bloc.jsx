@@ -18,10 +18,11 @@ import Tooltip from "@mui/material/Tooltip";
 import { BiChair } from "react-icons/bi";
 import { FaHeart } from "react-icons/fa";
 import { CgDanger } from "react-icons/cg";
+import { FaCopy } from "react-icons/fa";
 
 const style = {
-  maxWidth: "85%",
-  maxHeight: "85%",
+  maxWidth: "100%",
+  maxHeight: "100%",
   bottom: 0,
   left: 0,
   margin: "auto",
@@ -31,8 +32,10 @@ const style = {
   top: 0,
   oObjectFit: "contain",
   objectFit: "contain",
-  bgcolor: "#9badc9",
-  border: "2px solid #000",
+  // bgcolor: "#9badc9",
+  // border: "2px solid #000",
+  display: "flex",
+  justifyContent: "center"
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -173,6 +176,7 @@ const Bloc = (props) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
         onBackdropClick={handleClose}
+        onClick={handleClose}
       >
         <Box sx={style}>
           <Img
