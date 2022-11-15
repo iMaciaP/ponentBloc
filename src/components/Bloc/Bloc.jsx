@@ -35,7 +35,7 @@ const style = {
   // bgcolor: "#9badc9",
   // border: "2px solid #000",
   display: "flex",
-  justifyContent: "center"
+  justifyContent: "center",
 };
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -59,17 +59,18 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const Img = styled("img")({
   margin: "auto",
   display: "block",
+  borderRadius: "8px",
 });
 
 const Bloc = (props) => {
   const { vies } = props;
 
-  const parsedCoords = props.coords[0]+","+props.coords[1];
-  
+  const parsedCoords = props.coords[0] + "," + props.coords[1];
+
   const [open, setOpen] = React.useState(false);
+  const [openTooltip, setOpenTooltip] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const handleCopy = (cords) => navigator.clipboard.writeText(cords);
 
   return (
     <>
@@ -104,19 +105,38 @@ const Bloc = (props) => {
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <Typography gutterBottom variant="subtitle1" component="div">
+                <Typography gutterBottom variant="h5" component="div">
                   {props.name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="subtitle1" color="#5b99f7">
                   COORDS: {parsedCoords}
-                  <ButtonBase
-                    variant="contained"
-                    sx={{
-                      width: "64px",
-                      margin: "16px",
-                    }}
-                    onClick={handleCopy(parsedCoords)}
-                  ><FaCopy /></ButtonBase>
+                  <Tooltip
+                    title="Copied coords!"
+                    placement="top"
+                    open={openTooltip}
+                    disableHoverListener
+                  >
+                    <ButtonBase
+                      sx={{
+                        width: "64px",
+                        margin: "16px",
+                        padding: "8px",
+                        backgroundColor: "#5b99f7", //should be mui theme https://mui.com/material-ui/customization/color/
+                        borderRadius: "4px",
+                        color: "white",
+                      }}
+                      // onClick={handleCopy(parsedCoords)}
+                      onClick={() => {
+                        navigator.clipboard.writeText(parsedCoords);
+                        setOpenTooltip(true);
+                        setTimeout(() => {
+                          setOpenTooltip(false);
+                        }, 1000);
+                      }}
+                    >
+                      <FaCopy />
+                    </ButtonBase>
+                  </Tooltip>
                 </Typography>
 
                 <TableContainer component={Paper}>
@@ -182,7 +202,7 @@ const Bloc = (props) => {
             alt="complex"
             src={!!props.img ? props.img : esperoTest}
             sx={{
-              height: "auto"
+              height: "auto",
             }}
           />
         </Box>
