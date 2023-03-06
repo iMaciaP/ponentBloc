@@ -2,7 +2,8 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    padding: 32px;
+    padding: 8px;
     flex-direction: row;
+    width: "100%";
   }
   
