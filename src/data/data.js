@@ -51,7 +51,7 @@ export const navBarLinks = [
     sectors: [{ name: "Sector", link: "/prx/1" }],
   },
 ];
-export const cardsInfo = [
+export const cardsGarrigues = [
   {
     header: "Les Garrigues",
     title: "Castelldans - La valleta",
@@ -59,10 +59,10 @@ export const cardsInfo = [
     btnlink: "/cst/1",
     imgSrc: cst_logo,
     btnLabel: "Anar",
-    facils: 1,
-    med: 1,
-    dif: 1,
-    xtrem: 1,
+    facils: 13,
+    med: 8,
+    dif: 9,
+    xtrem: 2,
   },
   {
     header: "Les Garrigues",
@@ -72,10 +72,13 @@ export const cardsInfo = [
     imgSrc: cst2_logo,
     btnLabel: "Anar",
     facils: 1,
-    med: 1,
+    med: 7,
     dif: 1,
     xtrem: 1,
-  },
+  }
+];
+
+export const cardsNoguera = [
   {
     header: "La Noguera",
     title: "Cubells - Principal",
@@ -84,44 +87,23 @@ export const cardsInfo = [
     imgSrc: cub_logo,
     btnLabel: "Anar",
     facils: 1,
-    med: 1,
-    dif: 1,
     xtrem: 1,
-  },
+  }
+];
+
+export const cardsSegria = [
   {
-    header: "Urgell",
-    title: "Belianes - Les roques del barret",
+    header: "Segria",
+    title: "Algun nom - Principal",
     desc: "Algun text descriptiu",
-    btnlink: "/bln/1",
-    imgSrc: missing,
-    btnLabel: "Anar",
-    facils: 5,
-    med: 5,
-    dif: 5,
-    xtrem: 5,
-  } /*,
-  {
-    header: "Les Garrigues",
-    title: "Titol",
-    desc: "alun tipus de descripcio del lloc dels blocs o algo",
     btnlink: "/about",
+    imgSrc: cub_logo,
     btnLabel: "Anar",
-    facils: 12,
-    med: 5,
-    dif: 7,
-    xtrem: 3,
-  },
-  {
-    header: "",
-    title: "Vimpela",
-    desc: "exemple vimpela exemple vimpela",
-    btnlink: "",
-    btnLabel: "Anar",
-    facils: 12,
-    med: 5,
-    dif: 7,
-    xtrem: 3,
-  }, */,
+    facils: 2,
+    med: 4,
+    dif: 6,
+    xtrem: 12,
+  }
 ];
 
 export const SectorsVies = {
