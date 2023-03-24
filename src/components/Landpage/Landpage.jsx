@@ -21,7 +21,7 @@ const Landpage = () => {
     <>
       <Banner />
       <div className="container">
-        <Button className="buttons" variant="contained" onClick={() => setCurrSector(0)}>1 - page</Button>
+        <Button className="buttons" variant="contained" onClick={() => setCurrSector(0)}>Garrigues</Button>
         <Button className="buttons" variant="contained" onClick={() => setCurrSector(1)}>2 - page</Button>
         <Button className="buttons" variant="contained" onClick={() => setCurrSector(2)}>3 - page</Button>
         {mapCards[currSector]? (
