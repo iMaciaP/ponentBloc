@@ -24,6 +24,7 @@ import cst2_8 from "../imgs/castelldans/les-penes/boulder-8.JPG";
 import cst2_9 from "../imgs/castelldans/les-penes/boulder-9.JPG";
 import cst2_10 from "../imgs/castelldans/les-penes/boulder-10.JPG";
 import cub_logo from "../imgs/cubells/cubells.jpg";
+import camarasa from "../imgs/varis/camarasa.jpg";
 import missing from "../imgs/placeholder.png";
 export const navBarLinks = [
   {
@@ -95,7 +96,7 @@ export const cardsGarrigues = [
     med: 7,
     dif: 1,
     xtrem: 1,
-  }
+  },
 ];
 
 export const cardsNoguera = [
@@ -108,7 +109,7 @@ export const cardsNoguera = [
     btnLabel: "Anar",
     facils: 1,
     xtrem: 1,
-  }
+  },
 ];
 
 export const cardsSegria = [
@@ -117,13 +118,13 @@ export const cardsSegria = [
     title: "Algun nom - Principal",
     desc: "Algun text descriptiu",
     btnlink: "/about",
-    imgSrc: cub_logo,
+    imgSrc: camarasa,
     btnLabel: "Anar",
     facils: 2,
     med: 4,
     dif: 6,
     xtrem: 12,
-  }
+  },
 ];
 
 export const SectorsVies = {
@@ -139,12 +140,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
+            sit: true,
           },
           {
             name: "Un altre exemple sense icones de via",
             grau: "7a",
-          }
+          },
         ],
       },
       Bloc5: {
@@ -157,12 +158,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
+            sit: true,
           },
           {
             name: "Un altre exemple sense icones de via",
             grau: "7a",
-          }
+          },
         ],
       },
       Bloc6: {
@@ -175,12 +176,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
+            sit: true,
           },
           {
             name: "Un altre exemple sense icones de via",
             grau: "7a",
-          }
+          },
         ],
       },
       Bloc7: {
@@ -193,12 +194,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
+            sit: true,
           },
           {
             name: "Un altre exemple sense icones de via",
             grau: "7a",
-          }
+          },
         ],
       },
       Bloc8: {
@@ -211,12 +212,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
+            sit: true,
           },
           {
             name: "Un altre exemple sense icones de via",
             grau: "7a",
-          }
+          },
         ],
       },
       Bloc9: {
@@ -229,12 +230,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
+            sit: true,
           },
           {
             name: "Un altre exemple sense icones de via",
             grau: "7a",
-          }
+          },
         ],
       },
       Bloc10: {
@@ -247,8 +248,8 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
       Bloc11: {
@@ -261,12 +262,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
       Bloc12: {
-        coords: [41.497892, 0.778850],
+        coords: [41.497892, 0.77885],
         name: "Bloc 12: Orígens",
         img: cst1_12,
         vies: [
@@ -275,12 +276,12 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
       Bloc13: {
-        coords: [41.497892, 0.778850],
+        coords: [41.497892, 0.77885],
         name: "Bloc 12: Higher ground",
         img: cst1_13,
         vies: [
@@ -289,8 +290,8 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
       Bloc14: {
@@ -303,8 +304,8 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
       Bloc15: {
@@ -317,8 +318,8 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
       Bloc16: {
@@ -331,11 +332,10 @@ export const SectorsVies = {
             grau: "6a",
             love: true,
             cau: true,
-            sit: true
-          }
+            sit: true,
+          },
         ],
       },
-     
     },
     {
       Bloc1: {
@@ -348,8 +348,8 @@ export const SectorsVies = {
             grau: "V",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc2: {
@@ -362,8 +362,8 @@ export const SectorsVies = {
             grau: "V",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc3: {
@@ -376,12 +376,12 @@ export const SectorsVies = {
             grau: "V",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc4: {
-        coords: [41.494210, 0.786152],
+        coords: [41.49421, 0.786152],
         name: "Bloc 4: Projecte etern",
         img: cst2_4,
         vies: [
@@ -390,8 +390,8 @@ export const SectorsVies = {
             grau: "V",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc5: {
@@ -404,8 +404,8 @@ export const SectorsVies = {
             grau: "7a",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc6: {
@@ -418,12 +418,12 @@ export const SectorsVies = {
             grau: "7a",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc7: {
-        coords: [41.494129, 0.785860],
+        coords: [41.494129, 0.78586],
         name: "Bloc 7: El piset",
         img: cst2_7,
         vies: [
@@ -432,8 +432,8 @@ export const SectorsVies = {
             grau: "7a",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc8: {
@@ -446,8 +446,8 @@ export const SectorsVies = {
             grau: "7a",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc9: {
@@ -460,8 +460,8 @@ export const SectorsVies = {
             grau: "7a",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
       Bloc10: {
@@ -474,8 +474,8 @@ export const SectorsVies = {
             grau: "7a",
             sit: true,
             cau: true,
-            love: true
-          }
+            love: true,
+          },
         ],
       },
     },
@@ -515,5 +515,5 @@ export const SectorsVies = {
         ],
       },
     },
-  ]
+  ],
 };

@@ -1,39 +1,73 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Landpage.css";
 import SectorCard from "../SectorCard/SectorCard";
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import Button from "@mui/material/Button";
+import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import { cardsGarrigues, cardsNoguera, cardsSegria } from "../../data/data";
-import { Typography } from "@mui/material";
+import { Stack, Typography, Divider, Container } from "@mui/material";
 
 const Landpage = () => {
   const [currSector, setCurrSector] = useState(0);
-  console.log(currSector);
 
   const mapCards = {
-    0 : cardsGarrigues,
-    1 : cardsNoguera,
-    2 : cardsSegria
-  }
+    0: cardsGarrigues,
+    1: cardsNoguera,
+    2: cardsSegria,
+  };
+
+  useEffect(() => {}, [currSector]);
 
   return (
-    <>
+    <Container
+      maxWidth="xl"
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
       <Banner />
-      <div className="container">
-        <Button className="buttons" variant="contained" onClick={() => setCurrSector(0)}>Garrigues</Button>
-        <Button className="buttons" variant="contained" onClick={() => setCurrSector(1)}>2 - page</Button>
-        <Button className="buttons" variant="contained" onClick={() => setCurrSector(2)}>3 - page</Button>
-        {mapCards[currSector]? (
-          <div className="SectorCards">
-            {mapCards[currSector].map((element, index) => {
-              return <SectorCard key={index} {...element} />;
-            })}
-          </div>
-        ) : <Typography>No info aneu al boto colabora per queixar-vos</Typography>}
-      </div>
+      <Paper sx={{ margin: 3 }}>
+        <Stack
+          direction="row"
+          divider={<Divider orientation="vertical" flexItem />}
+          spacing={2}
+          sx={{ padding: 3 }}
+        >
+          <Button variant="contained" onClick={() => setCurrSector(0)}>
+            Garrigues
+          </Button>
+          <Button variant="contained" onClick={() => setCurrSector(1)}>
+            La Noguera
+          </Button>
+          <Button variant="contained" onClick={() => setCurrSector(2)}>
+            Segrià
+          </Button>
+        </Stack>
+      </Paper>
+      {mapCards[currSector] ? (
+        <Box
+          sx={{
+            flexWrap: "wrap",
+            display: "flex",
+            justifyContent: "space-around",
+            padding: 8,
+            flexDirection: "row",
+            width: "100%",
+          }}
+        >
+          {mapCards[currSector].map((element, index) => {
+            return <SectorCard key={index} {...element} />;
+          })}
+        </Box>
+      ) : (
+        <Typography>No info aneu al boto colabora per queixar-vos</Typography>
+      )}
       <Footer />
-    </>
+    </Container>
   );
 };
 

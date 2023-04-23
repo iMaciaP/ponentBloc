@@ -1,42 +1,16 @@
 import React from "react";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 
 const Banner = () => {
   return (
-    <Paper
-      sx={{
-        p: 2,
-        margin: "16px",
-        flexGrow: 1,
-        backgroundColor: (theme) =>
-          theme.palette.mode === "dark" ? "#1A2027" : "#1769aa",
-        // backgroundColor: "#F5C841",
-      }}
-    >
-      <Container maxWidth="sm">
-        <Typography
-          component="h1"
-          variant="h2"
-          align="center"
-          color="white"
-          gutterBottom
-        >
-          Bloc de ponent
-        </Typography>
-        <Typography
-          variant="h5"
-          align="center"
-          color="white"
-          paragraph
-        >
-          L'idea es tenir un repositori on poder consultar les vies i blocs que
-          hi ha per la zona de ponent de Catalunya.El projecte es públic a
-          github per a qui vulgui col·laborar.
-        </Typography>
-      </Container>
-    </Paper>
+    <Stack maxWidth="md" spacing={2} sx={{ margin: 2 }}>
+      <Alert severity="info">Bloc de ponent</Alert>
+      <Alert severity="warning">
+        L'idea es tenir un repositori on poder consultar les vies i blocs que hi
+        ha per la zona de ponent de Catalunya
+      </Alert>
+    </Stack>
   );
 };
 

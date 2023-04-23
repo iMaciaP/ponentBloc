@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import NavBar from "../NavBar/NavBar";
+// import NavBar from "../NavBar/NavBar";
+import AppBar from "../AppBar/AppBar";
 import About from "../About/About";
 import SectorPage from "../SectorPage/SectorPage";
 import Landpage from "../Landpage/Landpage";
@@ -12,7 +13,8 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <NavBar />
+        {/* <NavBar /> */}
+        <AppBar />
         <Routes>
           <Route exact path="/" element={<Landpage />} />
           <Route path="/about" element={<About />} />
