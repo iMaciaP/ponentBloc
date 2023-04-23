@@ -26,52 +26,7 @@ import cst2_10 from "../imgs/castelldans/les-penes/boulder-10.JPG";
 import cub_logo from "../imgs/cubells/cubells.jpg";
 import camarasa from "../imgs/varis/camarasa.jpg";
 import missing from "../imgs/placeholder.png";
-export const navBarLinks = [
-  {
-    title: "Albages",
-    sectors: [{ name: "El roc de la duna", link: "/abg/1" }],
-  },
-  {
-    title: "Castelldans",
-    sectors: [
-      { name: "La valleta", link: "/cst/1" },
-      { name: "Les  penes", link: "/cst/2" },
-    ],
-  },
-  {
-    title: "El Cogul",
-    sectors: [
-      { name: "Beer Action", link: "/cgl/1" },
-      { name: "Els camps", link: "/cgl/2" },
-      { name: "El turonet", link: "/cgl/3" },
-      { name: "Lo pallars", link: "/cgl/4" },
-      { name: "Mestre muten", link: "/cgl/5" },
-      { name: "La Universitat", link: "/cgl/6" },
-    ],
-  },
-  {
-    title: "Cubells",
-    sectors: [{ name: "Principal", link: "/cub/1" }],
-  },
-  {
-    title: "Torrebesses",
-    sectors: [
-      { name: "Les trinxeres", link: "/trrb/1" },
-      { name: "Sectoret", link: "/trrb/2" },
-    ],
-  },
-  {
-    title: "Belianes",
-    sectors: [
-      { name: "Costat 1", link: "/bln/1" },
-      { name: "Costat 2", link: "/bln/2" },
-    ],
-  },
-  {
-    title: "Preixens",
-    sectors: [{ name: "Sector", link: "/prx/1" }],
-  },
-];
+
 export const cardsGarrigues = [
   {
     header: "Les Garrigues",
@@ -97,6 +52,30 @@ export const cardsGarrigues = [
     dif: 1,
     xtrem: 1,
   },
+  {
+    header: "Les Garrigues",
+    title: "El cogul - Mestre muten",
+    desc: "Iniciació",
+    btnlink: "/cgl/1",
+    imgSrc: cst_logo,
+    btnLabel: "Anar",
+    facils: 13,
+    med: 8,
+    dif: 9,
+    xtrem: 2,
+  },
+  {
+    header: "Les Garrigues",
+    title: "El cogul - La universitat",
+    desc: "Les penes de castelldans, molt bona per principiants i a l'hivern",
+    btnlink: "/cgl/2",
+    imgSrc: cst2_logo,
+    btnLabel: "Anar",
+    facils: 1,
+    med: 7,
+    dif: 1,
+    xtrem: 1,
+  },
 ];
 
 export const cardsNoguera = [
@@ -105,6 +84,29 @@ export const cardsNoguera = [
     title: "Cubells - Principal",
     desc: "Algun text descriptiu",
     btnlink: "/cub/1",
+    imgSrc: cub_logo,
+    btnLabel: "Anar",
+    facils: 1,
+    xtrem: 1,
+  },
+];
+
+export const cardsUrgell = [
+  {
+    header: "L'Urgell",
+    title: "Belianes - Roques del barret",
+    desc: "Algun text descriptiu",
+    btnlink: "/bln/1",
+    imgSrc: cub_logo,
+    btnLabel: "Anar",
+    facils: 1,
+    xtrem: 1,
+  },
+  {
+    header: "L'Urgell",
+    title: "Maldà - Ermita de noseque",
+    desc: "Algun text descriptiu",
+    btnlink: "/mld/1",
     imgSrc: cub_logo,
     btnLabel: "Anar",
     facils: 1,

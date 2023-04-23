@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Landpage.css";
 import SectorCard from "../SectorCard/SectorCard";
 import Banner from "../Banner/Banner";
-import Footer from "../Footer/Footer";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import { cardsGarrigues, cardsNoguera, cardsSegria } from "../../data/data";
+import {
+  cardsGarrigues,
+  cardsNoguera,
+  cardsSegria,
+  cardsUrgell,
+} from "../../data/data";
 import { Stack, Typography, Divider, Container } from "@mui/material";
 
 const Landpage = () => {
@@ -16,9 +20,8 @@ const Landpage = () => {
     0: cardsGarrigues,
     1: cardsNoguera,
     2: cardsSegria,
+    3: cardsUrgell,
   };
-
-  useEffect(() => {}, [currSector]);
 
   return (
     <Container
@@ -37,6 +40,7 @@ const Landpage = () => {
           spacing={2}
           sx={{ padding: 3 }}
         >
+          {/* Estaria be moure aixo */}
           <Button variant="contained" onClick={() => setCurrSector(0)}>
             Garrigues
           </Button>
@@ -46,27 +50,35 @@ const Landpage = () => {
           <Button variant="contained" onClick={() => setCurrSector(2)}>
             Segrià
           </Button>
+          <Button variant="contained" onClick={() => setCurrSector(3)}>
+            L'urgell
+          </Button>
         </Stack>
       </Paper>
-      {mapCards[currSector] ? (
-        <Box
-          sx={{
-            flexWrap: "wrap",
-            display: "flex",
-            justifyContent: "space-around",
-            padding: 8,
-            flexDirection: "row",
-            width: "100%",
-          }}
-        >
-          {mapCards[currSector].map((element, index) => {
-            return <SectorCard key={index} {...element} />;
-          })}
-        </Box>
-      ) : (
-        <Typography>No info aneu al boto colabora per queixar-vos</Typography>
-      )}
-      <Footer />
+      <Stack
+        direction="row"
+        divider={<Divider orientation="vertical" flexItem />}
+        spacing={2}
+      >
+        {mapCards[currSector] ? (
+          <Box
+            sx={{
+              flexWrap: "wrap",
+              display: "flex",
+              justifyContent: "center",
+              padding: 8,
+              flexDirection: "row",
+              width: "100%",
+            }}
+          >
+            {mapCards[currSector].map((element, index) => {
+              return <SectorCard key={index} {...element} />;
+            })}
+          </Box>
+        ) : (
+          <Typography>No info, envieu un correu per queixar-vos</Typography>
+        )}
+      </Stack>
     </Container>
   );
 };

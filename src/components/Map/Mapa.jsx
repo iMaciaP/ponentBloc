@@ -16,7 +16,7 @@ L.Icon.Default.mergeOptions({
 const Mapa = (props) => {
   return (
     <MapContainer
-      style={{ height: "30vh", margin: 16, borderRadius: 4 }}
+      style={{ height: "35vh", margin: 16, borderRadius: 4 }}
       center={props.coords[0]}
       zoom={18}
       scrollWheelZoom={true}
