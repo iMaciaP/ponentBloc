@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <GlobalProvider>
-      <div className="App" sx={{ textAlign: "center" }}>
+      <div className="App" sx={{ textAlign: "center", height: "90vh" }}>
         <Router>
           <AppBar />
           <Routes>

@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
 import Bloc from "../Bloc/Bloc.jsx";
 import Map from "../Map/Mapa.jsx";
 import { SectorsVies } from "../../data/data";
@@ -62,6 +63,13 @@ const SectorPage = (props) => {
           <Typography gutterBottom variant="title1" component="h4">
             | (• ◡•)| (❍ᴥ❍ʋ)
           </Typography>
+          <br />
+          <Alert severity="warning">
+            Pots trobar les ressenyes que tinc aqui:{" "}
+            <a href="https://drive.google.com/drive/folders/1rFB2FYWl74s9JKTMGbfYOz6rh3oX4hbb?usp=share_link">
+              link
+            </a>
+          </Alert>
         </Paper>
       )}
     </Container>

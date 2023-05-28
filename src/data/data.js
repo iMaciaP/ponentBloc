@@ -302,11 +302,35 @@ export const SectorsVies = {
         img: cst1_14,
         vies: [
           {
-            name: "Exemple de via",
-            grau: "6a",
+            name: "Lance al fly",
+            grau: "6b+",
             love: true,
-            cau: true,
-            sit: true,
+          },
+          {
+            name: "La Masse",
+            grau: "7a",
+          },
+          {
+            name: "Le trou jamaican (*morf)",
+            grau: "6c/7b*",
+          },
+          {
+            name: "Dedos endos",
+            grau: "6b",
+          },
+          {
+            name: "Pastora de gossos",
+            grau: "6b",
+            love: true
+          },
+          {
+            name: "Regletejant",
+            grau: "6a",
+            sit: true
+          },
+          {
+            name: "Per començar",
+            grau: "3",
           },
         ],
       },

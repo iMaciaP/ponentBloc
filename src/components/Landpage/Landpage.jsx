@@ -35,10 +35,14 @@ const Landpage = () => {
       <Banner />
       <Paper sx={{ margin: 3 }}>
         <Stack
-          direction="row"
           divider={<Divider orientation="vertical" flexItem />}
-          spacing={2}
-          sx={{ padding: 3 }}
+          spacing={{ xs: 1, sm: 2 }}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          padding={2}
+          useFlexGap
+          flexWrap="wrap"
         >
           {/* Estaria be moure aixo */}
           <Button variant="contained" onClick={() => setCurrSector(0)}>

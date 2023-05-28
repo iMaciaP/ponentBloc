@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 
 const FooterContainer = styled("footer")(({ theme }) => ({
-  position: "fixed",
+  // position: "fixed",
   bottom: 0,
   left: 0,
   right: 0,
