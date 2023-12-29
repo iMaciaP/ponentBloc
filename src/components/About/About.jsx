@@ -10,11 +10,18 @@ const text = `{
     img: cst2_1,
     vies: [
       {
-        name: "Aqui hi ha vies xules",
-        grau: "V",
-        sit: true,
-        cau: true,
-        love: true,
+        name: "Sense nom 1",
+        grau: "7B",
+        sit: false,
+        cau: false,
+        love: false,
+      },
+      {
+        name: "Sense nom 2",
+        grau: "6A+",
+        sit: false,
+        cau: false,
+        love: false,
       },
     ],
   },
@@ -41,38 +48,76 @@ const About = () => {
           Aquesta pàgina és en construcció, tot és gratis així que va al seu
           ritme.
         </Typography>
+        <Typography gutterBottom variant="title">
+          Mencions honorables a:
+          <ul>
+            <li>
+              <a href="https://aprietaclimbing.com/">Aprieta climb</a>
+            </li>
+            <li>
+              <a href="https://github.com/chervera/lboulder">
+                {"Lboulder (majoria de fotos)"}{" "}
+              </a>
+            </li>
+            <li>
+              <a href="http://www.lleidaclimbs.com/">Lleida climbs</a>
+            </li>
+            <li>
+              <a href="https://ponentbloc.netlify.app/">Bouldertopo Spain</a>
+            </li>
+            <li>
+              <a href="https://ponentbloc.netlify.app/">
+                La gent de Escala2 ❤️
+              </a>
+            </li>
+          </ul>
+        </Typography>
       </Paper>
       <Paper sx={{ padding: 2, margin: 1 }}>
         <Typography gutterBottom variant="subtitle">
-          Sempre pots col·laborar amb el que creguis enviant un correu a <br />
-          <b>profilacticxl@gmail.com</b>
+          Sempre pots col·laborar amb el que creguis enviant un correu a
+          <br />
+          <b>{"----------> amantechoncho96@gmail.com <----------"}</b>
+          <br />
         </Typography>
         <Typography gutterBottom variant="title">
-          {"| (• ◡•)| (❍ᴥ❍ʋ)"}
+          {"| (• ◡•)| (❍ᴥ❍ʋ) (•⩊•) (•⩊•)"}
         </Typography>
       </Paper>
+
       <Paper sx={{ padding: 2, margin: 1 }}>
         <Typography gutterBottom variant="title">
           TODO LIST:
           <br />
           <Typography gutterBottom variant="caption">
-            - implementar per penjar noves ressenyes{" "}
-            <a href="http://ianli.github.io/raphael-sketchpad/">
-              link dibuixar
-            </a>
+            - Fer/aconseguir mes fotos i ressenyes{" "}
           </Typography>
           <br />
           <Typography gutterBottom variant="caption">
-            - carregar dades -.-
+            - Carregar totes les imatges amb les linees
+          </Typography>
+          <br />
+          <Typography gutterBottom variant="caption">
+            - Que funcioni el buscador de vies
+          </Typography>
+          <br />
+          <Typography gutterBottom variant="caption">
+            - Pagar un domini perque no sigui ponentbloc.netlify.com
+          </Typography>
+          <br />
+          <Typography gutterBottom variant="caption">
+            - Nose...
           </Typography>
           <br />
         </Typography>
       </Paper>
       <Paper sx={{ padding: 2, margin: 1 }}>
+        <Typography gutterBottom variant="caption">
+          Si em voleu enviar algun bloc nou d'algun secotr, aquesta es
+          l'esctuctura que tenen
+        </Typography>
         <code>
-          <pre>
-            {text}
-          </pre>
+          <pre>{text}</pre>
         </code>
       </Paper>
     </Container>
